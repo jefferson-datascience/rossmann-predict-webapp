@@ -3,3 +3,4 @@ inflection
 numpy
 pandas
 scikit-learn
+xgboost==1.6.2
