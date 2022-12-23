@@ -4,10 +4,10 @@ import pandas as pd
 import pickle
 import os
 
-app = Flask(__name__)
-
 # loading model
 model = pickle.load(open('model/model_rossmann.pkl','rb'))
+
+app = Flask(__name__)
 
 @app.route('/rossmann/predict', methods=['POST'])
 
